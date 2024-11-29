@@ -1,7 +1,7 @@
 import { ToDo } from "../types/ToDo";
 
 const getToDos = async () => {
-  const response = await fetch("http://localhost:3000/todo");
+  const response = await fetch("https://jsonplaceholder.typicode.com/todos");
   const data = response.json();
 
   return data;

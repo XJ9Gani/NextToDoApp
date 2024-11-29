@@ -3,7 +3,7 @@ import React from "react";
 import { ToDo } from "../types/ToDo";
 import { title } from "process";
 const getToDos = async () => {
-  const response = await fetch("http://localhost:3000/todo");
+  const response = await fetch("https://jsonplaceholder.typicode.com/todos");
   const data = response.json();
 
   return data;
